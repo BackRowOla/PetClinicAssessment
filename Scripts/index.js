@@ -3,9 +3,9 @@ function toOwnersPage() {
 }
  
 function toPetsPage() {
-    window.location.href = "insert relative path";
+    window.location.href = "./petInfo.html";
 }
  
 function toVisitsPage() {
-    window.location.href = "insert relative path";
+    window.location.href = ".";
 }
