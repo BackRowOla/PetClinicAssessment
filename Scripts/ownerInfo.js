@@ -1,11 +1,13 @@
 //fetch owner info by id
 let params = new URLSearchParams(window.location.search);
-let ownerId = params.get('id'); // dont forget to change to this from hard coded value
+let ownerId = params.get('Id'); // dont forget to change to this from hard coded value
+
+console.log(ownerId);
 
 getOwener();
 
 function getOwener() {
-    fetch('http://localhost:9966/petclinic/api/owners/' + 1)
+    fetch('http://localhost:9966/petclinic/api/owners/' + ownerId)
         .then(res => res.json())
         .then(json => handleData(json))
         .catch(err => console.error(err));
@@ -25,6 +27,7 @@ function handleData(data) {
 function getPets(petsData) {
 
     petsData.forEach(element => {
+        console.log(element.id);
         constructElement(element.id, 'li', "Name: " + element.name + " | Type: " + element.type.name);
     });
 }
@@ -35,7 +38,7 @@ function setData(elId, textData) {
 
 function constructElement(petId, elementName, content) {
     let myElement = document.createElement(elementName);
-    myElement.addEventListener('click', () => window.location.href = './petInfo.html?' + petId);
+    myElement.addEventListener('click', () => window.location.href = './petInfo.html?petId=' + petId);
     myElement.className = 'list-group-item';
     myElement.innerText = content;
     document.getElementById('petList').appendChild(myElement);
