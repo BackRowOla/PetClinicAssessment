@@ -5,7 +5,6 @@ let inputcity = document.getElementById("city");
 let inputtelephone = document.getElementById("telephone");
 
 function addOwner() {
-    debugger;
     fetch('http://localhost:9966/petclinic/api/owners', {
         method: 'POST',
         body: JSON.stringify({
@@ -21,6 +20,7 @@ function addOwner() {
 
 
         headers: { "Content-Type": "application/json" }
-    }).then(window.location.href = './owners.html' )
+    })
+    window.location.href = './owners.html' ;
 }
 
