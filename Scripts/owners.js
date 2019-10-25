@@ -3,7 +3,7 @@ let fName;
 let lName;
 let iD;
 
-<<<<<<< HEAD
+
 function printStuff() {
     debugger;
     fetch('http://localhost:9966/petclinic/api/owners', {
@@ -11,9 +11,9 @@ function printStuff() {
         headers: { "Accept": "application/json;charset=UTF-8" }
 
     }).then(res => res.json())
-    .then(json => console.log(json));
+    .then(json => printStuff(json));
 }
-=======
+
 printStuff();
 function printStuff() {
     
@@ -44,6 +44,6 @@ function displayOwners(data){
     }
 }
 function registerOwner(){
-    window.location.href='./ownerInfo.html';
+    window.location.href='./form.html';
 }
->>>>>>> e036b733a27de89b2f2f555df0f37a3739ee1d4f
+
