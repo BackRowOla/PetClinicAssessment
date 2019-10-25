@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/Pet.css">
+    <link rel="stylesheet" href="./Styles/index.css">
 </head>
- 
-<body class="pet-bg">
+
+<body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">TacoPie</a>
+            <a class="navbar-brand" href="#">Pet Clinic</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
- 
+
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -24,7 +24,7 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Pet Skinning Service</a>
+                        <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
@@ -42,46 +42,20 @@
                 </form>
             </div>
         </nav>
- 
+
         <main role="main">
- 
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <div class="container">
-                    <br>
-                    <h1 class="display-3">Welcome to the TacoPie Pet Clinic!</h1>
-                    <br>
-                    <p>At our clinic we always the best possible service to Pets and Owners alike! To enquire about your account, pet or visit please see below.</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-                </div>
-            </div>
- 
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2>Owners</h2>
-                        <p>To view or amend your details as a pet owner, please follow the link below</p>
-                        <p><a class="btn btn-secondary" onclick="toOwnersPage();" href="./owners.html" role="button">View details »</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Pets</h2>
-                        <p>To view or update details regarding your pet please follow the link below</p>
-                        <p><a class="btn btn-secondary" onclick="toPetsPage();" href="#" role="button">View details »</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Visits</h2>
-                        <p>To schedule, cancel or amend an existing visit please follow the link below</p>
-                        <p><a class="btn btn-secondary" onclick="toVisitsPage();" href="#" role="button">View details »</a></p>
-                    </div>
-                </div>
- 
-                <hr>
- 
-            </div> <!-- /container -->
- 
+          
+          <h2> New Owner</h2>
+
+            <input type='text' id ='address'>address</input>
+            <input type='text' id ='city'>city</input>
+            <input type='text' id ='firstname'>FirstName</input>
+            <input type='text' id ='lastname'>lastName</input>
+            <input type='text' id ='telephone'>Telephone no.</input>
+
+            <button class="btn btn-primary" onclick = 'addOwner()'>Add Owner</button>
         </main>
- 
+
         <footer class="container">
             <p>© Company 2017-2019</p>
         </footer>
@@ -92,8 +66,7 @@
         <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
             crossorigin="anonymous"></script>
-    <script src="./Scripts/Pet.js"></script>
+    <script src="./Scripts/form.js"></script>
 </body>
- 
-</html>
 
+</html>

@@ -1,5 +1,5 @@
 function toOwnersPage() {
-    window.location.href = "insert relative path";
+    window.location.href = './owners.html';
 }
  
 function toPetsPage() {
